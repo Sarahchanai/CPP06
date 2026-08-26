@@ -1,10 +1,14 @@
-NAME = ex03
+NAME = ScalarConverter
 
 CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp \
+SRCS =  main.cpp \
+		Converters.cpp \
+		Detection.cpp \
+		ScalarConverter.cpp
+
 		
 
 
