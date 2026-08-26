@@ -1,7 +1,7 @@
 #ifndef DETECTION_HPP
 #define DETECTION_HPP
 
-
+#include <string>
 
 
 bool	isOnlyOneChar(const std::string& input);

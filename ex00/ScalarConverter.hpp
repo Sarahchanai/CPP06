@@ -8,6 +8,7 @@
 #include <climits>
 #include <cfloat>
 #include <cmath>
+#include <string>
 
 class	ScalarConverter
 {

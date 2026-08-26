@@ -76,13 +76,15 @@ void printFloat(double value)
 
 	f = static_cast<float>(value);
 
-	if (f == std::floor(f))
-		std::cout << f << ".0f" << std::endl;
-	else
-		std::cout << f << "f" << std::endl;
+	// if (f == std::floor(f))
+	// 	std::cout << f << ".0f" << std::endl;
+	// else
+	// 	std::cout << f << "f" << std::endl;
+
+	std::cout << std::fixed << std::setprecision(1) << f << "f" << std::endl;
 }
 
-void printDouble(double value)
+void printDouble(double value) // b1 que value déjà double -> règles de formatage propres au double obligé
 {
 	std::cout << "double : ";
 
@@ -101,10 +103,12 @@ void printDouble(double value)
 		return ;
 	}
 
-	if (value == std::floor(value))
-		std::cout << value << ".0" << std::endl;
-	else
-		std::cout << value << std::endl;
+	// if (value == std::floor(value))
+	// 	std::cout << value << ".0" << std::endl;
+	// else
+	// 	std::cout << value << std::endl;
+
+	std::cout << std::fixed << std::setprecision(1) << value << std::endl;
 }
 
 void printAllFours(double value)
