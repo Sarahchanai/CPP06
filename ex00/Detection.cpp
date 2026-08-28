@@ -24,17 +24,24 @@ bool	isSpecialWord(const std::string& input)
 bool	isSimilarToANumber(const std::string& input)
 {
 	size_t	i;
+	size_t	len;
 	bool	pointDejaVu;
 	bool	chiffreTrouve;
 
 	i = 0;
+
+	// pje parcours mon nb jusqu'a trouve un f
+	len = input.length();
+	if (len > 0 && input[len - 1] == 'f')
+		len--;
+
 	pointDejaVu = false;
 	chiffreTrouve = false;
 
 	if (input[i] == '+' || input[i] == '-')
 		i++; //signe ok ms only en 1ere pos°
 
-	while (i < input.length())
+	while (i < len)
 	{
 		if (std::isdigit(static_cast<unsigned char>(input[i])))
 			chiffreTrouve = true;
