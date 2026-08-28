@@ -5,15 +5,14 @@
 #include "C.hpp"
 #include <cstdlib>
 
-/*
-** On fabrique VRAIMENT un coeur, un pique ou un trefle (new A(),
-** new B() ou new C()) -- la vraie famille existe bel et bien en
-** memoire. Mais la fonction la renvoie typee "Base*" : c'est
-** exactement tendre la carte face cachee. Celui qui recoit le
-** resultat ne connait plus la vraie famille tant qu'il n'a pas
-** appele identify().
-*/
-Base* generate(void)
+
+
+// fonction qui pioche au hasard une carte
+//
+
+
+Base*   generate(void)
+//type de retour = Base* -> renvoie la carte retournee pour qu'elle ne puisse ps etre identifiable -> solution -> call fonction identify 
 {
     int familleTiree = std::rand() % 3;
 

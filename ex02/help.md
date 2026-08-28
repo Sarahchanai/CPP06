@@ -1,0 +1,3 @@
+NB : dynamic_cast sert à demander, pour UN objet donné dont on ne connaît que le type générique (Base*), "es-tu réellement de tel type précis ?"
+pcq j'aurai besoin de cette info ulterieurement pour accéder à ce que seul CE type précis peut offrir. Si on doit poser cette question à plusieurs objets d'affilée (une liste), on répète l'appel plusieurs fois, MAIS chaque appel reste une question isolée sur un seul objet.
+Donc a la fin pour chaque obj on connait sa vraie identite de type (celle qui etait cachee derriere l'etiquette generique base*)
